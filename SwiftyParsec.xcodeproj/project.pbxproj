@@ -11,6 +11,19 @@
 		E85A47C41E51EAFC00584D99 /* SwiftyParsec.h in Headers */ = {isa = PBXBuildFile; fileRef = E85A47861E51E57E00584D99 /* SwiftyParsec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E85A47D21E51EB4C00584D99 /* SwiftyParsec.h in Headers */ = {isa = PBXBuildFile; fileRef = E85A47861E51E57E00584D99 /* SwiftyParsec.h */; };
 		E85A47E01E51EC2100584D99 /* SwiftyParsec.h in Headers */ = {isa = PBXBuildFile; fileRef = E85A47861E51E57E00584D99 /* SwiftyParsec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E85A47E71E51EE5100584D99 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A47E11E51EE5100584D99 /* Functions.swift */; };
+		E85A47E81E51EE5100584D99 /* ParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A47E21E51EE5100584D99 /* ParseError.swift */; };
+		E85A47E91E51EE5100584D99 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A47E31E51EE5100584D99 /* Parser.swift */; };
+		E85A47EA1E51EE5100584D99 /* Parser+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A47E41E51EE5100584D99 /* Parser+Operators.swift */; };
+		E85A47EB1E51EE5100584D99 /* ParseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A47E51E51EE5100584D99 /* ParseResult.swift */; };
+		E85A47F01E51F28800584D99 /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E85A47EE1E51F28800584D99 /* Curry.framework */; };
+		E85A47F11E51F28800584D99 /* Runes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E85A47EF1E51F28800584D99 /* Runes.framework */; };
+		E85A47F41E51F29900584D99 /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E85A47F21E51F29900584D99 /* Curry.framework */; };
+		E85A47F51E51F29900584D99 /* Runes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E85A47F31E51F29900584D99 /* Runes.framework */; };
+		E85A47F81E51F30200584D99 /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E85A47F61E51F30200584D99 /* Curry.framework */; };
+		E85A47F91E51F30200584D99 /* Runes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E85A47F71E51F30200584D99 /* Runes.framework */; };
+		E85A47FC1E51F31A00584D99 /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E85A47FA1E51F31A00584D99 /* Curry.framework */; };
+		E85A47FD1E51F31A00584D99 /* Runes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E85A47FB1E51F31A00584D99 /* Runes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +33,19 @@
 		E85A47BC1E51EA4F00584D99 /* SwiftyParsec.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyParsec.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E85A47CA1E51EB3D00584D99 /* SwiftyParsec.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyParsec.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E85A47D81E51EC0E00584D99 /* SwiftyParsec.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyParsec.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E85A47E11E51EE5100584D99 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		E85A47E21E51EE5100584D99 /* ParseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseError.swift; sourceTree = "<group>"; };
+		E85A47E31E51EE5100584D99 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		E85A47E41E51EE5100584D99 /* Parser+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Parser+Operators.swift"; sourceTree = "<group>"; };
+		E85A47E51E51EE5100584D99 /* ParseResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseResult.swift; sourceTree = "<group>"; };
+		E85A47EE1E51F28800584D99 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = Carthage/Build/iOS/Curry.framework; sourceTree = "<group>"; };
+		E85A47EF1E51F28800584D99 /* Runes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Runes.framework; path = Carthage/Build/iOS/Runes.framework; sourceTree = "<group>"; };
+		E85A47F21E51F29900584D99 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = Carthage/Build/tvOS/Curry.framework; sourceTree = "<group>"; };
+		E85A47F31E51F29900584D99 /* Runes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Runes.framework; path = Carthage/Build/tvOS/Runes.framework; sourceTree = "<group>"; };
+		E85A47F61E51F30200584D99 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = Carthage/Build/Mac/Curry.framework; sourceTree = "<group>"; };
+		E85A47F71E51F30200584D99 /* Runes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Runes.framework; path = Carthage/Build/Mac/Runes.framework; sourceTree = "<group>"; };
+		E85A47FA1E51F31A00584D99 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = Carthage/Build/watchOS/Curry.framework; sourceTree = "<group>"; };
+		E85A47FB1E51F31A00584D99 /* Runes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Runes.framework; path = Carthage/Build/watchOS/Runes.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E85A47F01E51F28800584D99 /* Curry.framework in Frameworks */,
+				E85A47F11E51F28800584D99 /* Runes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E85A47F41E51F29900584D99 /* Curry.framework in Frameworks */,
+				E85A47F51E51F29900584D99 /* Runes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E85A47F81E51F30200584D99 /* Curry.framework in Frameworks */,
+				E85A47F91E51F30200584D99 /* Runes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E85A47FC1E51F31A00584D99 /* Curry.framework in Frameworks */,
+				E85A47FD1E51F31A00584D99 /* Runes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +94,7 @@
 				E85A47851E51E57E00584D99 /* Resource */,
 				E85A47941E51E66F00584D99 /* SwiftyParsec */,
 				E85A47841E51E57E00584D99 /* Products */,
+				E85A47ED1E51F28800584D99 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,8 +122,28 @@
 		E85A47941E51E66F00584D99 /* SwiftyParsec */ = {
 			isa = PBXGroup;
 			children = (
+				E85A47E11E51EE5100584D99 /* Functions.swift */,
+				E85A47E21E51EE5100584D99 /* ParseError.swift */,
+				E85A47E31E51EE5100584D99 /* Parser.swift */,
+				E85A47E41E51EE5100584D99 /* Parser+Operators.swift */,
+				E85A47E51E51EE5100584D99 /* ParseResult.swift */,
 			);
 			path = SwiftyParsec;
+			sourceTree = "<group>";
+		};
+		E85A47ED1E51F28800584D99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E85A47FA1E51F31A00584D99 /* Curry.framework */,
+				E85A47FB1E51F31A00584D99 /* Runes.framework */,
+				E85A47F61E51F30200584D99 /* Curry.framework */,
+				E85A47F71E51F30200584D99 /* Runes.framework */,
+				E85A47F21E51F29900584D99 /* Curry.framework */,
+				E85A47F31E51F29900584D99 /* Runes.framework */,
+				E85A47EE1E51F28800584D99 /* Curry.framework */,
+				E85A47EF1E51F28800584D99 /* Runes.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +267,7 @@
 				TargetAttributes = {
 					E85A479F1E51E69200584D99 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					E85A47BB1E51EA4F00584D99 = {
@@ -284,6 +340,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E85A47EA1E51EE5100584D99 /* Parser+Operators.swift in Sources */,
+				E85A47E81E51EE5100584D99 /* ParseError.swift in Sources */,
+				E85A47EB1E51EE5100584D99 /* ParseResult.swift in Sources */,
+				E85A47E71E51EE5100584D99 /* Functions.swift in Sources */,
+				E85A47E91E51EE5100584D99 /* Parser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +474,7 @@
 		E85A47A61E51E69200584D99 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
@@ -420,6 +482,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -427,6 +493,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.waft.SwiftyParsec;
 				PRODUCT_NAME = SwiftyParsec;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -434,12 +501,17 @@
 		E85A47A71E51E69200584D99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -460,6 +532,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -482,6 +558,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -505,6 +585,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -528,6 +612,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -551,6 +639,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -574,6 +666,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

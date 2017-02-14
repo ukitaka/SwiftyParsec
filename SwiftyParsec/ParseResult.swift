@@ -12,6 +12,15 @@ public enum ParseResult<A> {
 }
 
 public extension ParseResult {
+    public var isSuccess: Bool {
+        switch self {
+        case .success:
+            return true
+        case .failure:
+            return false
+        }
+    }
+    
     public func map<B>(_ f: (A) -> B) -> ParseResult<B> {
         switch self {
         case .success(let a, let c):

@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Examples.playground">
+   </FileRef>
+   <FileRef
+      location = "group:Examples/Examples.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:SwiftyParsec.xcodeproj">
    </FileRef>
 </Workspace>

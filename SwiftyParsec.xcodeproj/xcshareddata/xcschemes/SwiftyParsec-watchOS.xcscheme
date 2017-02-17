@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E85A47D71E51EC0E00584D99"
-               BuildableName = "SwiftyParsec-watchOS.framework"
+               BuildableName = "SwiftyParsec.framework"
                BlueprintName = "SwiftyParsec-watchOS"
                ReferencedContainer = "container:SwiftyParsec.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E85A47D71E51EC0E00584D99"
-            BuildableName = "SwiftyParsec-watchOS.framework"
+            BuildableName = "SwiftyParsec.framework"
             BlueprintName = "SwiftyParsec-watchOS"
             ReferencedContainer = "container:SwiftyParsec.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E85A47D71E51EC0E00584D99"
-            BuildableName = "SwiftyParsec-watchOS.framework"
+            BuildableName = "SwiftyParsec.framework"
             BlueprintName = "SwiftyParsec-watchOS"
             ReferencedContainer = "container:SwiftyParsec.xcodeproj">
          </BuildableReference>

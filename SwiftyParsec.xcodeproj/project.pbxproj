@@ -92,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				E85A47851E51E57E00584D99 /* Resource */,
-				E85A47941E51E66F00584D99 /* SwiftyParsec */,
+				E85A47941E51E66F00584D99 /* Sources */,
 				E85A47841E51E57E00584D99 /* Products */,
 				E85A47ED1E51F28800584D99 /* Frameworks */,
 			);
@@ -119,7 +119,7 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		E85A47941E51E66F00584D99 /* SwiftyParsec */ = {
+		E85A47941E51E66F00584D99 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				E85A47E11E51EE5100584D99 /* Functions.swift */,
@@ -128,7 +128,7 @@
 				E85A47E41E51EE5100584D99 /* Parser+Operators.swift */,
 				E85A47E51E51EE5100584D99 /* ParseResult.swift */,
 			);
-			path = SwiftyParsec;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		E85A47ED1E51F28800584D99 /* Frameworks */ = {
@@ -702,6 +702,7 @@
 				E85A47A71E51E69200584D99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E85A47C11E51EA4F00584D99 /* Build configuration list for PBXNativeTarget "SwiftyParsec-tvOS" */ = {
 			isa = XCConfigurationList;
@@ -710,6 +711,7 @@
 				E85A47C31E51EA4F00584D99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E85A47CF1E51EB3D00584D99 /* Build configuration list for PBXNativeTarget "SwiftyParsec-macOS" */ = {
 			isa = XCConfigurationList;
@@ -718,6 +720,7 @@
 				E85A47D11E51EB3D00584D99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E85A47DD1E51EC0F00584D99 /* Build configuration list for PBXNativeTarget "SwiftyParsec-watchOS" */ = {
 			isa = XCConfigurationList;
@@ -726,6 +729,7 @@
 				E85A47DF1E51EC0F00584D99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

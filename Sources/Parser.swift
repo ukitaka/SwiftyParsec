@@ -9,19 +9,20 @@
 import Runes
 
 public struct Parser<A> {
-    let _parse: (String.CharacterView) -> ParseResult<A>
+    let _parse: (String.UnicodeScalarView) -> ParseResult<A>
 
-    public func parse(characterView: String.CharacterView) -> ParseResult<A> {
-        return _parse(characterView)
+    public init(_ parse: @escaping (String.UnicodeScalarView) -> ParseResult<A>) {
+        self._parse = parse
+    }
+
+    public func parse(UnicodeScalarView: String.UnicodeScalarView) -> ParseResult<A> {
+        return _parse(UnicodeScalarView)
     }
 
     public func parse(string: String) -> ParseResult<A> {
-        return _parse(string.characters)
+        return _parse(string.unicodeScalars)
     }
 
-    public init(_ parse: @escaping (String.CharacterView) -> ParseResult<A>) {
-        self._parse = parse
-    }
 
     public func map<B>(_ f: @escaping (A) -> B) -> Parser<B> {
         return Parser<B> { self._parse($0).map(f) }
@@ -53,21 +54,30 @@ public extension Parser {
         }
     }
 
-    public static func character(_ c: Character) -> Parser<Character> {
-        return Parser<Character> { cv in
-            guard cv.first == c  else {
+    public static func unicodeScalar(_ u: UnicodeScalar) -> Parser<UnicodeScalar> {
+        return Parser<UnicodeScalar> { uv in
+            guard uv.first == u  else {
                 return .failure(.error)
             }
-            return .success(c, cv.dropFirst())
+            return .success(u, uv.dropFirst())
+        }
+    }
+
+    public static func characterSet(_ cs: CharacterSet) -> Parser<UnicodeScalar> {
+        return Parser<UnicodeScalar> { uv in
+            guard let first = uv.first, cs.contains(first)  else {
+                return .failure(.error)
+            }
+            return .success(first, uv.dropFirst())
         }
     }
     
     public static func string(_ s: String) -> Parser<String> {
         return Parser<String> { cv in
-            guard cv.starts(with: s.characters) else {
+            guard cv.starts(with: s.unicodeScalars) else {
                 return .failure(.error)
             }
-            return .success(s, cv.dropFirst(s.characters.count))
+            return .success(s, cv.dropFirst(s.unicodeScalars.count))
         }
     }
 }

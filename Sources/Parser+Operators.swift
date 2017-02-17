@@ -22,9 +22,9 @@ public func <*> <A, B>(lhs: Parser<(A) -> B>, _ rhs: @escaping @autoclosure () -
 
 public func *> <A, B>(lhs: Parser<A>, rhs: @autoclosure @escaping () -> Parser<B>) -> Parser<B> {
     return Parser<B> { cv in
-        switch lhs.parse(characterView: cv) {
+        switch lhs.parse(UnicodeScalarView: cv) {
         case .success(_, let cv2):
-            return rhs().parse(characterView: cv2)
+            return rhs().parse(UnicodeScalarView: cv2)
         case .failure(let e):
             return .failure(e)
         }
@@ -33,9 +33,9 @@ public func *> <A, B>(lhs: Parser<A>, rhs: @autoclosure @escaping () -> Parser<B
 
 public func <* <A, B>(lhs: Parser<A>, rhs: @autoclosure @escaping () -> Parser<B>) -> Parser<A> {
     return Parser<A> { cv in
-        switch lhs.parse(characterView: cv) {
+        switch lhs.parse(UnicodeScalarView: cv) {
         case .success(let a, let cv2):
-            switch rhs().parse(characterView: cv2) {
+            switch rhs().parse(UnicodeScalarView: cv2) {
             case .success(_, let cv3):
                 return .success(a, cv3)
             case .failure(let e):

@@ -7,7 +7,7 @@
 //
 
 public enum ParseResult<A> {
-    case success(A, String.CharacterView)
+    case success(A, String.UnicodeScalarView)
     case failure(ParseError)
 }
 

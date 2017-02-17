@@ -28,4 +28,14 @@ final public class URLParser {
     public func parseURL() -> Parser<URL> {
         fatalError("not implemented")
     }
+
+    // MARK: - Scheme
+
+    public typealias Scheme = String
+
+    // scheme = 1*[ lowalpha | digit | "+" | "-" | "." ]
+
+    public func parseScheme() -> Parser<Scheme> {
+        fatalError("not implemented")
+    }
 }

@@ -28,6 +28,10 @@
 		E86A84E61E573EB500DDA293 /* Parser+Generate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86A84E41E573EB500DDA293 /* Parser+Generate.swift */; };
 		E86A84E71E573EB500DDA293 /* Parser+Generate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86A84E41E573EB500DDA293 /* Parser+Generate.swift */; };
 		E86A84E81E573EB500DDA293 /* Parser+Generate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86A84E41E573EB500DDA293 /* Parser+Generate.swift */; };
+		E86A84EA1E5744C400DDA293 /* Parser+Combinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86A84E91E5744C400DDA293 /* Parser+Combinator.swift */; };
+		E86A84EB1E5744C400DDA293 /* Parser+Combinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86A84E91E5744C400DDA293 /* Parser+Combinator.swift */; };
+		E86A84EC1E5744C400DDA293 /* Parser+Combinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86A84E91E5744C400DDA293 /* Parser+Combinator.swift */; };
+		E86A84ED1E5744C400DDA293 /* Parser+Combinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86A84E91E5744C400DDA293 /* Parser+Combinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +55,7 @@
 		E85A47FA1E51F31A00584D99 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = Carthage/Build/watchOS/Curry.framework; sourceTree = "<group>"; };
 		E85A47FB1E51F31A00584D99 /* Runes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Runes.framework; path = Carthage/Build/watchOS/Runes.framework; sourceTree = "<group>"; };
 		E86A84E41E573EB500DDA293 /* Parser+Generate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Parser+Generate.swift"; sourceTree = "<group>"; };
+		E86A84E91E5744C400DDA293 /* Parser+Combinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Parser+Combinator.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +137,7 @@
 				E85A47E31E51EE5100584D99 /* Parser.swift */,
 				E85A47E41E51EE5100584D99 /* Parser+Operators.swift */,
 				E86A84E41E573EB500DDA293 /* Parser+Generate.swift */,
+				E86A84E91E5744C400DDA293 /* Parser+Combinator.swift */,
 				E85A47E51E51EE5100584D99 /* ParseResult.swift */,
 			);
 			path = Sources;
@@ -354,6 +360,7 @@
 				E85A47EB1E51EE5100584D99 /* ParseResult.swift in Sources */,
 				E86A84E51E573EB500DDA293 /* Parser+Generate.swift in Sources */,
 				E85A47E71E51EE5100584D99 /* Functions.swift in Sources */,
+				E86A84EA1E5744C400DDA293 /* Parser+Combinator.swift in Sources */,
 				E85A47E91E51EE5100584D99 /* Parser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E86A84EB1E5744C400DDA293 /* Parser+Combinator.swift in Sources */,
 				E86A84E61E573EB500DDA293 /* Parser+Generate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E86A84EC1E5744C400DDA293 /* Parser+Combinator.swift in Sources */,
 				E86A84E71E573EB500DDA293 /* Parser+Generate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,6 +387,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E86A84ED1E5744C400DDA293 /* Parser+Combinator.swift in Sources */,
 				E86A84E81E573EB500DDA293 /* Parser+Generate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		E86A84CF1E572A9F00DDA293 /* Examples.h in Headers */ = {isa = PBXBuildFile; fileRef = E86A84CD1E572A9F00DDA293 /* Examples.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E86A84DD1E572B2800DDA293 /* SwiftyParsec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86A84DC1E572B2800DDA293 /* SwiftyParsec.framework */; };
-		E86A84E01E572B4F00DDA293 /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86A84DE1E572B4F00DDA293 /* Curry.framework */; };
-		E86A84E11E572B4F00DDA293 /* Runes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86A84DF1E572B4F00DDA293 /* Runes.framework */; };
+		E86A84E31E572F5000DDA293 /* URLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86A84E21E572F5000DDA293 /* URLParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +19,7 @@
 		E86A84DC1E572B2800DDA293 /* SwiftyParsec.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyParsec.framework; path = "../../../../Library/Developer/Xcode/DerivedData/SwiftyParsec-dqgatjbtaindtwewmjnwtjhnlvrv/Build/Products/Debug-iphonesimulator/SwiftyParsec.framework"; sourceTree = "<group>"; };
 		E86A84DE1E572B4F00DDA293 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = ../Carthage/Build/iOS/Curry.framework; sourceTree = "<group>"; };
 		E86A84DF1E572B4F00DDA293 /* Runes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Runes.framework; path = ../Carthage/Build/iOS/Runes.framework; sourceTree = "<group>"; };
+		E86A84E21E572F5000DDA293 /* URLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,8 +27,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E86A84E01E572B4F00DDA293 /* Curry.framework in Frameworks */,
-				E86A84E11E572B4F00DDA293 /* Runes.framework in Frameworks */,
 				E86A84DD1E572B2800DDA293 /* SwiftyParsec.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,6 +54,7 @@
 		E86A84CC1E572A9F00DDA293 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				E86A84E21E572F5000DDA293 /* URLParser.swift */,
 				E86A84CD1E572A9F00DDA293 /* Examples.h */,
 				E86A84CE1E572A9F00DDA293 /* Info.plist */,
 			);
@@ -116,6 +115,7 @@
 					E86A84C91E572A9F00DDA293 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = G73SPYZ3Q7;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -152,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E86A84E31E572F5000DDA293 /* URLParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +261,7 @@
 		E86A84D31E572A9F00DDA293 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = G73SPYZ3Q7;
@@ -268,10 +270,12 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Examples/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.waft.Examples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -279,6 +283,7 @@
 		E86A84D41E572A9F00DDA293 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = G73SPYZ3Q7;
@@ -287,6 +292,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Examples/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.waft.Examples;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -6,6 +6,8 @@
 //  Copyright © 2017年 waft. All rights reserved.
 //
 
+import Foundation
+
 public extension Parser {
     public static func success(_ a: A) -> Parser<A> {
         return Parser<A> { cv in

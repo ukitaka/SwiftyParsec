@@ -48,7 +48,11 @@
 		E86A850D1E580F2A00DDA293 /* Parser+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A47E41E51EE5100584D99 /* Parser+Operators.swift */; };
 		E86A850E1E580F2A00DDA293 /* ParseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A47E51E51EE5100584D99 /* ParseResult.swift */; };
 		E8C932471E5818B90084B66C /* SwiftyParsec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E85A47A01E51E69200584D99 /* SwiftyParsec.framework */; };
-		E8C9324D1E5818DB0084B66C /* SwiftyParsecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C9323C1E5818A10084B66C /* SwiftyParsecTests.swift */; };
+		E8C9324D1E5818DB0084B66C /* JSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C9323C1E5818A10084B66C /* JSONTests.swift */; };
+		E8C932501E581AC60084B66C /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E85A47EE1E51F28800584D99 /* Curry.framework */; };
+		E8C932511E581AC60084B66C /* Runes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E85A47EF1E51F28800584D99 /* Runes.framework */; };
+		E8C932531E581B0D0084B66C /* Curry.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = E85A47EE1E51F28800584D99 /* Curry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E8C932541E581B0D0084B66C /* Runes.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = E85A47EF1E51F28800584D99 /* Runes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,21 @@
 			remoteInfo = "SwiftyParsec-iOS";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E8C932521E581AF80084B66C /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E8C932531E581B0D0084B66C /* Curry.framework in Copy Frameworks */,
+				E8C932541E581B0D0084B66C /* Runes.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E85A47861E51E57E00584D99 /* SwiftyParsec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyParsec.h; sourceTree = "<group>"; };
@@ -83,7 +102,7 @@
 		E85A47FB1E51F31A00584D99 /* Runes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Runes.framework; path = Carthage/Build/watchOS/Runes.framework; sourceTree = "<group>"; };
 		E86A84E41E573EB500DDA293 /* Parser+Generate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Parser+Generate.swift"; sourceTree = "<group>"; };
 		E86A84E91E5744C400DDA293 /* Parser+Combinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Parser+Combinator.swift"; sourceTree = "<group>"; };
-		E8C9323C1E5818A10084B66C /* SwiftyParsecTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyParsecTests.swift; sourceTree = "<group>"; };
+		E8C9323C1E5818A10084B66C /* JSONTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONTests.swift; sourceTree = "<group>"; };
 		E8C932421E5818B90084B66C /* SwiftyParsec-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftyParsec-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -129,6 +148,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8C932471E5818B90084B66C /* SwiftyParsec.framework in Frameworks */,
+				E8C932501E581AC60084B66C /* Curry.framework in Frameworks */,
+				E8C932511E581AC60084B66C /* Runes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +229,7 @@
 		E8C9323B1E5818840084B66C /* SwiftyParsecTests */ = {
 			isa = PBXGroup;
 			children = (
-				E8C9323C1E5818A10084B66C /* SwiftyParsecTests.swift */,
+				E8C9323C1E5818A10084B66C /* JSONTests.swift */,
 			);
 			path = SwiftyParsecTests;
 			sourceTree = "<group>";
@@ -330,6 +351,7 @@
 				E8C9323E1E5818B90084B66C /* Sources */,
 				E8C9323F1E5818B90084B66C /* Frameworks */,
 				E8C932401E5818B90084B66C /* Resources */,
+				E8C932521E581AF80084B66C /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -498,7 +520,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8C9324D1E5818DB0084B66C /* SwiftyParsecTests.swift in Sources */,
+				E8C9324D1E5818DB0084B66C /* JSONTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -837,6 +859,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = G73SPYZ3Q7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -850,6 +877,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = G73SPYZ3Q7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

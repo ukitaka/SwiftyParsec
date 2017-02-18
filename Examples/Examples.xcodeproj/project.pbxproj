@@ -10,6 +10,7 @@
 		E86A84CF1E572A9F00DDA293 /* Examples.h in Headers */ = {isa = PBXBuildFile; fileRef = E86A84CD1E572A9F00DDA293 /* Examples.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E86A84DD1E572B2800DDA293 /* SwiftyParsec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86A84DC1E572B2800DDA293 /* SwiftyParsec.framework */; };
 		E86A84E31E572F5000DDA293 /* URLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86A84E21E572F5000DDA293 /* URLParser.swift */; };
+		E86A84EF1E5808E300DDA293 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86A84EE1E5808E300DDA293 /* JSONParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,9 +18,10 @@
 		E86A84CD1E572A9F00DDA293 /* Examples.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Examples.h; sourceTree = "<group>"; };
 		E86A84CE1E572A9F00DDA293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E86A84DC1E572B2800DDA293 /* SwiftyParsec.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyParsec.framework; path = "../../../../Library/Developer/Xcode/DerivedData/SwiftyParsec-dqgatjbtaindtwewmjnwtjhnlvrv/Build/Products/Debug-iphonesimulator/SwiftyParsec.framework"; sourceTree = "<group>"; };
-		E86A84DE1E572B4F00DDA293 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = ../Carthage/Build/iOS/Curry.framework; sourceTree = "<group>"; };
-		E86A84DF1E572B4F00DDA293 /* Runes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Runes.framework; path = ../Carthage/Build/iOS/Runes.framework; sourceTree = "<group>"; };
 		E86A84E21E572F5000DDA293 /* URLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParser.swift; sourceTree = "<group>"; };
+		E86A84EE1E5808E300DDA293 /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		E86A84FA1E580D8200DDA293 /* Runes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Runes.framework; path = ../Carthage/Build/iOS/Runes.framework; sourceTree = "<group>"; };
+		E86A850F1E5810BB00DDA293 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = ../Carthage/Build/iOS/Curry.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				E86A84E21E572F5000DDA293 /* URLParser.swift */,
+				E86A84EE1E5808E300DDA293 /* JSONParser.swift */,
 				E86A84CD1E572A9F00DDA293 /* Examples.h */,
 				E86A84CE1E572A9F00DDA293 /* Info.plist */,
 			);
@@ -64,8 +67,8 @@
 		E86A84DB1E572B2800DDA293 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E86A84DE1E572B4F00DDA293 /* Curry.framework */,
-				E86A84DF1E572B4F00DDA293 /* Runes.framework */,
+				E86A850F1E5810BB00DDA293 /* Curry.framework */,
+				E86A84FA1E580D8200DDA293 /* Runes.framework */,
 				E86A84DC1E572B2800DDA293 /* SwiftyParsec.framework */,
 			);
 			name = Frameworks;
@@ -92,7 +95,7 @@
 				E86A84C51E572A9F00DDA293 /* Sources */,
 				E86A84C61E572A9F00DDA293 /* Frameworks */,
 				E86A84C71E572A9F00DDA293 /* Headers */,
-				E86A84C81E572A9F00DDA293 /* Resources */,
+				E86A85121E5810D600DDA293 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -137,21 +140,30 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		E86A84C81E572A9F00DDA293 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* Begin PBXShellScriptBuildPhase section */
+		E86A85121E5810D600DDA293 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Curry.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Runes.framework",
+			);
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
-/* End PBXResourcesBuildPhase section */
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E86A84C51E572A9F00DDA293 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E86A84EF1E5808E300DDA293 /* JSONParser.swift in Sources */,
 				E86A84E31E572F5000DDA293 /* URLParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

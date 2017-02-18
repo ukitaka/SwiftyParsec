@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E85A47A81E51E97100584D99 /* SwiftyParsec.h in Headers */ = {isa = PBXBuildFile; fileRef = E85A47861E51E57E00584D99 /* SwiftyParsec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E85A47C41E51EAFC00584D99 /* SwiftyParsec.h in Headers */ = {isa = PBXBuildFile; fileRef = E85A47861E51E57E00584D99 /* SwiftyParsec.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E85A47D21E51EB4C00584D99 /* SwiftyParsec.h in Headers */ = {isa = PBXBuildFile; fileRef = E85A47861E51E57E00584D99 /* SwiftyParsec.h */; };
+		E85A47D21E51EB4C00584D99 /* SwiftyParsec.h in Headers */ = {isa = PBXBuildFile; fileRef = E85A47861E51E57E00584D99 /* SwiftyParsec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E85A47E01E51EC2100584D99 /* SwiftyParsec.h in Headers */ = {isa = PBXBuildFile; fileRef = E85A47861E51E57E00584D99 /* SwiftyParsec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E85A47E71E51EE5100584D99 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A47E11E51EE5100584D99 /* Functions.swift */; };
 		E85A47E81E51EE5100584D99 /* ParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A47E21E51EE5100584D99 /* ParseError.swift */; };
@@ -32,6 +32,21 @@
 		E86A84EB1E5744C400DDA293 /* Parser+Combinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86A84E91E5744C400DDA293 /* Parser+Combinator.swift */; };
 		E86A84EC1E5744C400DDA293 /* Parser+Combinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86A84E91E5744C400DDA293 /* Parser+Combinator.swift */; };
 		E86A84ED1E5744C400DDA293 /* Parser+Combinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86A84E91E5744C400DDA293 /* Parser+Combinator.swift */; };
+		E86A85001E580F0D00DDA293 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A47E11E51EE5100584D99 /* Functions.swift */; };
+		E86A85011E580F0D00DDA293 /* ParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A47E21E51EE5100584D99 /* ParseError.swift */; };
+		E86A85021E580F0D00DDA293 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A47E31E51EE5100584D99 /* Parser.swift */; };
+		E86A85031E580F0D00DDA293 /* Parser+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A47E41E51EE5100584D99 /* Parser+Operators.swift */; };
+		E86A85041E580F0D00DDA293 /* ParseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A47E51E51EE5100584D99 /* ParseResult.swift */; };
+		E86A85051E580F1E00DDA293 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A47E11E51EE5100584D99 /* Functions.swift */; };
+		E86A85061E580F1E00DDA293 /* ParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A47E21E51EE5100584D99 /* ParseError.swift */; };
+		E86A85071E580F1E00DDA293 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A47E31E51EE5100584D99 /* Parser.swift */; };
+		E86A85081E580F1E00DDA293 /* Parser+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A47E41E51EE5100584D99 /* Parser+Operators.swift */; };
+		E86A85091E580F1E00DDA293 /* ParseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A47E51E51EE5100584D99 /* ParseResult.swift */; };
+		E86A850A1E580F2A00DDA293 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A47E11E51EE5100584D99 /* Functions.swift */; };
+		E86A850B1E580F2A00DDA293 /* ParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A47E21E51EE5100584D99 /* ParseError.swift */; };
+		E86A850C1E580F2A00DDA293 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A47E31E51EE5100584D99 /* Parser.swift */; };
+		E86A850D1E580F2A00DDA293 /* Parser+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A47E41E51EE5100584D99 /* Parser+Operators.swift */; };
+		E86A850E1E580F2A00DDA293 /* ParseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A47E51E51EE5100584D99 /* ParseResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -369,6 +384,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E86A85051E580F1E00DDA293 /* Functions.swift in Sources */,
+				E86A85061E580F1E00DDA293 /* ParseError.swift in Sources */,
+				E86A85071E580F1E00DDA293 /* Parser.swift in Sources */,
+				E86A85081E580F1E00DDA293 /* Parser+Operators.swift in Sources */,
+				E86A85091E580F1E00DDA293 /* ParseResult.swift in Sources */,
 				E86A84EB1E5744C400DDA293 /* Parser+Combinator.swift in Sources */,
 				E86A84E61E573EB500DDA293 /* Parser+Generate.swift in Sources */,
 			);
@@ -378,6 +398,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E86A85001E580F0D00DDA293 /* Functions.swift in Sources */,
+				E86A85011E580F0D00DDA293 /* ParseError.swift in Sources */,
+				E86A85021E580F0D00DDA293 /* Parser.swift in Sources */,
+				E86A85031E580F0D00DDA293 /* Parser+Operators.swift in Sources */,
+				E86A85041E580F0D00DDA293 /* ParseResult.swift in Sources */,
 				E86A84EC1E5744C400DDA293 /* Parser+Combinator.swift in Sources */,
 				E86A84E71E573EB500DDA293 /* Parser+Generate.swift in Sources */,
 			);
@@ -387,6 +412,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E86A850A1E580F2A00DDA293 /* Functions.swift in Sources */,
+				E86A850B1E580F2A00DDA293 /* ParseError.swift in Sources */,
+				E86A850C1E580F2A00DDA293 /* Parser.swift in Sources */,
+				E86A850D1E580F2A00DDA293 /* Parser+Operators.swift in Sources */,
+				E86A850E1E580F2A00DDA293 /* ParseResult.swift in Sources */,
 				E86A84ED1E5744C400DDA293 /* Parser+Combinator.swift in Sources */,
 				E86A84E81E573EB500DDA293 /* Parser+Generate.swift in Sources */,
 			);

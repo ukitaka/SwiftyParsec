@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E8C932411E5818B90084B66C"
+               BuildableName = "SwiftyParsec-iOSTests.xctest"
+               BlueprintName = "SwiftyParsec-iOSTests"
+               ReferencedContainer = "container:SwiftyParsec.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E85A479F1E51E69200584D99"
+            BuildableName = "SwiftyParsec.framework"
+            BlueprintName = "SwiftyParsec-iOS"
+            ReferencedContainer = "container:SwiftyParsec.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>

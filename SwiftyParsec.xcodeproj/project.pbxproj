@@ -47,7 +47,19 @@
 		E86A850C1E580F2A00DDA293 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A47E31E51EE5100584D99 /* Parser.swift */; };
 		E86A850D1E580F2A00DDA293 /* Parser+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A47E41E51EE5100584D99 /* Parser+Operators.swift */; };
 		E86A850E1E580F2A00DDA293 /* ParseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A47E51E51EE5100584D99 /* ParseResult.swift */; };
+		E8C932471E5818B90084B66C /* SwiftyParsec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E85A47A01E51E69200584D99 /* SwiftyParsec.framework */; };
+		E8C9324D1E5818DB0084B66C /* SwiftyParsecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C9323C1E5818A10084B66C /* SwiftyParsecTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E8C932481E5818B90084B66C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E85A477A1E51E57E00584D99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E85A479F1E51E69200584D99;
+			remoteInfo = "SwiftyParsec-iOS";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E85A47861E51E57E00584D99 /* SwiftyParsec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyParsec.h; sourceTree = "<group>"; };
@@ -71,6 +83,8 @@
 		E85A47FB1E51F31A00584D99 /* Runes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Runes.framework; path = Carthage/Build/watchOS/Runes.framework; sourceTree = "<group>"; };
 		E86A84E41E573EB500DDA293 /* Parser+Generate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Parser+Generate.swift"; sourceTree = "<group>"; };
 		E86A84E91E5744C400DDA293 /* Parser+Combinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Parser+Combinator.swift"; sourceTree = "<group>"; };
+		E8C9323C1E5818A10084B66C /* SwiftyParsecTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyParsecTests.swift; sourceTree = "<group>"; };
+		E8C932421E5818B90084B66C /* SwiftyParsec-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftyParsec-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,12 +124,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8C9323F1E5818B90084B66C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8C932471E5818B90084B66C /* SwiftyParsec.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		E85A47791E51E57E00584D99 = {
 			isa = PBXGroup;
 			children = (
+				E8C9323A1E5818720084B66C /* Tests */,
 				E85A47851E51E57E00584D99 /* Resource */,
 				E85A47941E51E66F00584D99 /* Sources */,
 				E85A47841E51E57E00584D99 /* Products */,
@@ -130,6 +153,7 @@
 				E85A47BC1E51EA4F00584D99 /* SwiftyParsec.framework */,
 				E85A47CA1E51EB3D00584D99 /* SwiftyParsec.framework */,
 				E85A47D81E51EC0E00584D99 /* SwiftyParsec.framework */,
+				E8C932421E5818B90084B66C /* SwiftyParsec-iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,6 +195,22 @@
 				E85A47EF1E51F28800584D99 /* Runes.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8C9323A1E5818720084B66C /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E8C9323B1E5818840084B66C /* SwiftyParsecTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		E8C9323B1E5818840084B66C /* SwiftyParsecTests */ = {
+			isa = PBXGroup;
+			children = (
+				E8C9323C1E5818A10084B66C /* SwiftyParsecTests.swift */,
+			);
+			path = SwiftyParsecTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,12 +323,31 @@
 			productReference = E85A47D81E51EC0E00584D99 /* SwiftyParsec.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		E8C932411E5818B90084B66C /* SwiftyParsec-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8C9324A1E5818B90084B66C /* Build configuration list for PBXNativeTarget "SwiftyParsec-iOSTests" */;
+			buildPhases = (
+				E8C9323E1E5818B90084B66C /* Sources */,
+				E8C9323F1E5818B90084B66C /* Frameworks */,
+				E8C932401E5818B90084B66C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8C932491E5818B90084B66C /* PBXTargetDependency */,
+			);
+			name = "SwiftyParsec-iOSTests";
+			productName = "SwiftyParsec-iOSTests";
+			productReference = E8C932421E5818B90084B66C /* SwiftyParsec-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		E85A477A1E51E57E00584D99 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = waft;
 				TargetAttributes = {
@@ -312,6 +371,11 @@
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
+					E8C932411E5818B90084B66C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = G73SPYZ3Q7;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = E85A477D1E51E57E00584D99 /* Build configuration list for PBXProject "SwiftyParsec" */;
@@ -330,6 +394,7 @@
 				E85A47BB1E51EA4F00584D99 /* SwiftyParsec-tvOS */,
 				E85A47C91E51EB3D00584D99 /* SwiftyParsec-macOS */,
 				E85A47D71E51EC0E00584D99 /* SwiftyParsec-watchOS */,
+				E8C932411E5818B90084B66C /* SwiftyParsec-iOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -357,6 +422,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E85A47D61E51EC0E00584D99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8C932401E5818B90084B66C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -422,7 +494,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8C9323E1E5818B90084B66C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8C9324D1E5818DB0084B66C /* SwiftyParsecTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8C932491E5818B90084B66C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E85A479F1E51E69200584D99 /* SwiftyParsec-iOS */;
+			targetProxy = E8C932481E5818B90084B66C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E85A47891E51E57E00584D99 /* Debug */ = {
@@ -745,6 +833,32 @@
 			};
 			name = Release;
 		};
+		E8C9324B1E5818B90084B66C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = G73SPYZ3Q7;
+				INFOPLIST_FILE = Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.waft.SwiftyParsec-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E8C9324C1E5818B90084B66C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = G73SPYZ3Q7;
+				INFOPLIST_FILE = Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.waft.SwiftyParsec-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -792,6 +906,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		E8C9324A1E5818B90084B66C /* Build configuration list for PBXNativeTarget "SwiftyParsec-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8C9324B1E5818B90084B66C /* Debug */,
+				E8C9324C1E5818B90084B66C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

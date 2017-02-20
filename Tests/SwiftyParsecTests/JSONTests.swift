@@ -2,7 +2,7 @@ import XCTest
 @testable import SwiftyParsec
 import Runes
 
-public indirect enum JSON {
+indirect enum JSON {
     case null
     case number(Double)
     case string(String)
